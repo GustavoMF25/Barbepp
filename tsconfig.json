@@ -15,5 +15,5 @@
     ".env",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "src/context/AuthProvider.tsx"  ]
 }

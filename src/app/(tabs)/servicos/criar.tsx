@@ -7,8 +7,8 @@ export default function Default() {
             <Text style={{ fontSize: 44, fontWeight: '700' }}>
                 EDITAR
             </Text>
-            <Link href={'/profile'} asChild>
-                <Button title="Perfil" />
+            <Link href={'/(tabs)/servicos/'} asChild>
+                <Button title="Serviços" />
             </Link>
 
         </View>

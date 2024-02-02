@@ -4,7 +4,7 @@ import { Link } from "expo-router";
 import { useContext } from "react";
 import { Text, View } from "react-native";
 
-export default function Profile() {
+export default function Agendamento() {
 
     const { tertiaryColor, secondaryColor, prymaryColor } = useContext(TemaContext)
 
@@ -17,7 +17,7 @@ export default function Profile() {
                 gap: 10,
             }}>
             <Text style={{ fontSize: 44, fontWeight: '700' }}>
-                Perfil
+                CRIAR AGENDAMENTO
             </Text>
 
             <View style={{ width: '30%' }}>

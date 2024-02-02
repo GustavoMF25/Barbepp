@@ -14,13 +14,13 @@ export const TemaContext = createContext({} as AuthContextProps)
 export function TemaProvider({ children }: any) {
 
     const [prymaryColor, setPrymaryColor] = useState<string>('#943746')
-    const [secondaryColor, setSecondaryColor] = useState<string>('#80b68f')
+    const [secondaryColor, setSecondaryColor] = useState<string>('#000')
     const [tertiaryColor, setTertiaryColor] = useState<string>('#fafafa')
     const [hoverColor, setHoverColor] = useState<string>('#5BA850')
 
     useEffect(() => {
         setPrymaryColor('#943746')
-        setSecondaryColor('#80b68f')
+        setSecondaryColor('#000')
         setTertiaryColor('#fafafa')
         setHoverColor('#5BA850')
     }, [])

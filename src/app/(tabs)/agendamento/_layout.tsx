@@ -8,10 +8,10 @@ export default function TabRoutesLayout() {
         <TemaProvider>
             <Drawer initialRouteName="Perfil">
                 <Drawer.Screen
-                    name="Perfil"
+                    name="index"
                     options={{
-                        title: 'Perfil',
-                        drawerLabel: 'Perfil',
+                        title: 'Agendamento',
+                        drawerLabel: 'Agendamento',
                         drawerIcon: ({ size, color }) => <Feather name="user" size={size} color={color} />,
                         drawerStyle: { paddingTop: '5%' },
                         // drawerItemStyle: {backgroundColor: 'red'}
@@ -19,6 +19,17 @@ export default function TabRoutesLayout() {
 
                 />
                 <Drawer.Screen
+                    name="criar_agendamento"
+                    options={{
+                        title: 'Criar agendamento',
+                        drawerLabel: 'Criar agendamento',
+                        drawerIcon: ({ size, color }) => <Feather name="user" size={size} color={color} />,
+                        drawerStyle: { paddingTop: '5%' },
+                        // drawerItemStyle: {backgroundColor: 'red'}
+                    }}
+
+                />
+                {/* <Drawer.Screen
                     name="Editar"
                     options={{
                         title: 'Editar Perfil',
@@ -26,7 +37,7 @@ export default function TabRoutesLayout() {
                         drawerIcon: ({ size, color }) => <Feather name="edit" size={size} color={color} />,
                         drawerStyle: { paddingTop: '55%' }
                     }}
-                />
+                /> */}
             </Drawer>
         </TemaProvider>
     )

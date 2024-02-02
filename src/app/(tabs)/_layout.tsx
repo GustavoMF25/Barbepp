@@ -6,17 +6,7 @@ import { Drawer } from 'expo-router/drawer';
 export default function TabRoutesLayout() {
     return (
         <TemaProvider>
-            {/* <Drawer>
-                <Drawer.Screen
-                    name="profile" // This is the name of the page and must match the url from root
-                    options={{
-                        title: 'profile',
-                        drawerLabel: 'overview'
-                        // tabBarIcon: ({ size, color }) => <MaterialIcons name="person" size={size} color={color} />
-                    }}
-                />
-            </Drawer> */}
-            
+
             <Tabs screenOptions={{ headerShown: false }} initialRouteName="Home">
                 <Tabs.Screen
                     name="Home"
@@ -26,10 +16,19 @@ export default function TabRoutesLayout() {
                     }}
                 />
                 <Tabs.Screen
-                    name="profile"
+                    name="servicos"
                     options={{
-                        title: 'Perfil',
-                        tabBarIcon: ({ size, color }) => <Feather name="user" size={size} color={color} />
+                        title: 'Serviços',
+                        href: '/servicos/',
+                        tabBarIcon: ({ size, color }) => <Feather name="dollar-sign" size={size} color={color} />
+                    }}
+                />
+                <Tabs.Screen
+                    name="agendamento"
+                    options={{
+                        title: 'Agendamento',
+                        href: '/agendamento/',
+                        tabBarIcon: ({ size, color }) => <Feather name="calendar" size={size} color={color} />
                     }}
                 />
             </Tabs>
